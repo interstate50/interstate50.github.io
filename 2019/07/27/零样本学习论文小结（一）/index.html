@@ -6,19 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello，Bohe | Hexo</title>
+  <title>零样本学习论文小结（一） | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一篇博客纪念一下，主要感觉研究生这半年以来，虽然看了很多东西，但是好多都忘了，还是需要记录一些有意义的东西，就当是成长的回忆吧。！">
+  <meta name="description" content="零样本学习目前主要研究热点为四类：  样本图像的视觉表征（CNN） 类别标签的语义表征（基于attribute的、基于embedding的、基于GCN\知识图谱的） 视觉表征与语义表征的映射 基于GAN等生成模型，相当于生成未知类的数据，变成了监督学习问题  《Zero-Shot Learning by Convex Combination of Semantic Embeddings(ConSE">
+<meta name="keywords" content="Zero Shot Learning">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello，Bohe">
-<meta property="og:url" content="http://yoursite.com/2019/01/14/“hello-bohe”/index.html">
+<meta property="og:title" content="零样本学习论文小结（一）">
+<meta property="og:url" content="http://yoursite.com/2019/07/27/零样本学习论文小结（一）/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一篇博客纪念一下，主要感觉研究生这半年以来，虽然看了很多东西，但是好多都忘了，还是需要记录一些有意义的东西，就当是成长的回忆吧。！">
+<meta property="og:description" content="零样本学习目前主要研究热点为四类：  样本图像的视觉表征（CNN） 类别标签的语义表征（基于attribute的、基于embedding的、基于GCN\知识图谱的） 视觉表征与语义表征的映射 基于GAN等生成模型，相当于生成未知类的数据，变成了监督学习问题  《Zero-Shot Learning by Convex Combination of Semantic Embeddings(ConSE">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-15T04:37:16.865Z">
+<meta property="og:image" content="http://yoursite.com/2019/07/27/零样本学习论文小结（一）/ConSE.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/27/零样本学习论文小结（一）/DeViSE.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/27/零样本学习论文小结（一）/DEM.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/27/零样本学习论文小结（一）/GCN.png">
+<meta property="og:updated_time" content="2019-07-27T07:29:18.114Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello，Bohe">
-<meta name="twitter:description" content="第一篇博客纪念一下，主要感觉研究生这半年以来，虽然看了很多东西，但是好多都忘了，还是需要记录一些有意义的东西，就当是成长的回忆吧。！">
+<meta name="twitter:title" content="零样本学习论文小结（一）">
+<meta name="twitter:description" content="零样本学习目前主要研究热点为四类：  样本图像的视觉表征（CNN） 类别标签的语义表征（基于attribute的、基于embedding的、基于GCN\知识图谱的） 视觉表征与语义表征的映射 基于GAN等生成模型，相当于生成未知类的数据，变成了监督学习问题  《Zero-Shot Learning by Convex Combination of Semantic Embeddings(ConSE">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/27/零样本学习论文小结（一）/ConSE.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -158,27 +164,35 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-“hello-bohe”" class="article article-type-post " itemscope="" itemprop="blogPost">
+            <article id="post-零样本学习论文小结（一）" class="article article-type-post " itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello，Bohe
+      零样本学习论文小结（一）
     </h1>
   
 
         
-        <a href="/2019/01/14/“hello-bohe”/" class="archive-article-date">
-  	<time datetime="2019-01-14T15:03:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-14</time>
+        <a href="/2019/07/27/零样本学习论文小结（一）/" class="archive-article-date">
+  	<time datetime="2019-07-27T07:11:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-27</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>第一篇博客纪念一下，主要感觉研究生这半年以来，虽然看了很多东西，但是好多都忘了，还是需要记录一些有意义的东西，就当是成长的回忆吧。<br>！<a href="/home/interstate50/Hexo/source/img/1.jpg"></a></p>
+        <p>零样本学习目前主要研究热点为四类：</p>
+<ol>
+<li>样本图像的视觉表征（CNN）</li>
+<li>类别标签的语义表征（基于attribute的、基于embedding的、基于GCN\知识图谱的）</li>
+<li>视觉表征与语义表征的映射</li>
+<li>基于GAN等生成模型，相当于生成未知类的数据，变成了监督学习问题</li>
+</ol>
+<p>《Zero-Shot Learning by Convex Combination of Semantic Embeddings(ConSE, 2013)》[<a href="https://arxiv.org/pdf/1312.5650v1.pdf" target="_blank" rel="noopener">pdf</a>] [code]<br>Andrea Frome et al 将原始的分类模型的得到的已知类的概率作为权重，加权每个已知类（可能是概率前几个）的word embedding得到未知类的语义表征，从而计算与未知类的embedding的相似度。<br><img src="/2019/07/27/零样本学习论文小结（一）/ConSE.png" alt="Alt text"></p>
+<p>《DeViSE: A Deep Visual-Semantic Embedding Model(DeViSE, 2013)》[<a href="http://www.cs.toronto.edu/~ranzato/publications/frome_nips2013.pdf" target="_blank" rel="noopener">pdf</a>] [code]<br>Norouzi, et al.提出了使用NLP模型得到embedding作为label的语义表征，同时将CNN最后一层的Softmax改成Linear Transformation，使用hinge rank loss作为loss得到视觉表征到语义表征的映射，同时指出如果使用L2 Loss效果在本任务中相对较差。<br><img src="/2019/07/27/零样本学习论文小结（一）/DeViSE.png" alt="Alt text"><br>《Learning a Deep Embedding Model for Zero-Shot Learning(DEM, 2017)》[<a href="https://arxiv.org/pdf/1611.05088.pdf" target="_blank" rel="noopener">pdf</a>] [<a href="https://github.com/lzrobots/DeepEmbeddingModel_ZSL" target="_blank" rel="noopener">tensorflow_code</a>][<a href="https://github.com/dragen1860/DeepEmbeddingModel_ZSL-Pytorch" target="_blank" rel="noopener">pytorch_code</a>]<br>Li Zhang et al 提出将语义信息映射到视觉空间，可以在一定程度上缓解hubness problem（hubness problem最初在《<a href="https://aclweb.org/anthology/P15-1027" target="_blank" rel="noopener">Hubness and pollution: Delving into cross-space mapping for zero-shot learning(2015)</a>》被提出，即在高维空间中，某些点会成为大多数点的最近邻点。由于ZSL在计算最终的正确率时，使用的是K-NN，所以会受到hubness problem的影响，并且《<a href="http://de.arxiv.org/pdf/1507.00825" target="_blank" rel="noopener">Ridge Regression, Hubness, and Zero-Shot Learning(2015)</a>》中，证明了基于岭回归的方法会加重hubness problem问题），同时语义特征可来源于单个语义源，多个语义源以及描述语句（如下图）。单个语义源的情况下，后接两个FC_ReLU层，与预训练网络的得到的视觉特征计算最小二乘损失函数（$L(W_1, W_2) = \frac{1}{N}\sum_{i=1}^N\lVert\phi(I_i)-f_1(W_2f_1(W_1y_i^u))\rVert^2 +\lambda(\lVert W_1\rVert^2+\lVert W_2\rVert^2)$，后面一项是权重惩罚项）。多个语义源的情况下，采用线性组合，即$f_2(W_1^{(1)}y_i^{u_1}+W_1^{(2)}y_i^{u_2}), f_2=1.7159\cdot tanh(\frac{2}{3}\cdot x)$。总体上取得了不错的结果。<br><img src="/2019/07/27/零样本学习论文小结（一）/DEM.png" alt="Alt text"><br>《Zero-shot Recognition via Semantic Embeddings and Knowledge Graphs(2018)》[<a href="https://arxiv.org/pdf/1803.08035.pdf" target="_blank" rel="noopener">pdf</a>] [<a href="https://github.com/JudyYe/zero-shot-gcn" target="_blank" rel="noopener">tensorflow_code</a>][<a href="https://github.com/ruotianluo/zsl-gcn-pth" target="_blank" rel="noopener">pytorch_code</a>]<br>Xiaolong Wang et al 通过GCN学出每一类(category)的分类器参数向量，在pretrained CNN features上进行二分类的预测。GCN中每个node代表一个category，node对应的特征向量为一个二分类分类器的参数向量，相当于逻辑回归，基于pretrained CNN features分类输入图片是否属于该category。训练GCN时，输入的node特征是每个category的semantic embedding vector，即使某些类没有训练样本，也能得到semantic embedding vector。之后经过6层GCN layer的学习，将semantic embedding vector转换为classifier weight vector，与有ground-truth的某些类的classifier weight vector算loss，经过反传不断优化后，学出没有训练样本的category的classifier weight vector，从而进行zero-shot recognition。<br><img src="/2019/07/27/零样本学习论文小结（一）/GCN.png" alt="Alt text"><br><strong>总结：</strong>ConSE直接采取了将分类模型的预测概率与对应的语义向量相乘获得混合向量，从而计算混合向量与未知类语义向量的距离；DeViSE采用将视觉特征映射到语义空间，在语义空间计算距离；DEM采用将语义空间映射到视觉空间，同时混合了多个语义源，获得了更好的结果；GCN采用将语义特征映射到分类器的权重空间，从而将视觉特征和获得权重相乘得到分类结果。</p>
 
       
 
@@ -208,6 +222,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Zero Shot Learning</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -258,7 +283,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/01/14/“hello-bohe”/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/27/零样本学习论文小结（一）/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -270,6 +295,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2019/04/30/Linux下多线程下载/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux下多线程下载</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -409,6 +444,10 @@ MathJax.Hub.Queue(function() {
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Zero Shot Learning</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -459,7 +498,7 @@ MathJax.Hub.Queue(function() {
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="http://hey-yahei.cn/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
             </li>
           
             <li class="search-li">
